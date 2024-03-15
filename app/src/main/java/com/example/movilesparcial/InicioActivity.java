@@ -6,24 +6,20 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class InicioActivity extends
-        AppCompatActivity {
+public class InicioActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate (Bundle
-                            savedIntanceState){
-    super.onCreate(savedIntanceState);
-    setContentView(R.layout.activity_main);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-        Button btniniciar =
-    findViewById(R.id.btniniciar);
-        botonInicio.setOnClikListener(new
-                View.OnClickListener(){
+        Button btniniciar = findViewById(R.id.btniniciar);
+        btniniciar.setOnClickListener(new View.OnClickListener() {
             @Override
-                    public void onClick(View v){
-
+            public void onClick(View v) {
+                // Acciones a realizar cuando se hace clic en el botón
             }
-                })
+        });
     }
 }
 
